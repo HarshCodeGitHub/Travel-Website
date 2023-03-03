@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travel Website</title>
+  <!-- Linking css file --> 
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  
+  <!-- Nav Bar -->
+  <nav class="navbar">
+
+      <div class="logo">ADVENTURE</div>
+
+      <ul class="navlinks">
+        <li class="active"><a href="#" target="_blank" >Home</a></li>
+        <li><a href="#" target="_blank">Tours</a></li>
+        <li><a href="#" target="_blank">Explore</a></li>
+        <li><a href="#" target="_blank">About</a></li>
+        <li class=" button"><a href="#" target="_blank">Contact</a></li>
+      </ul>
+
+      <img src="./menubutton.png" alt="Menu Button" class="menu-button">
+  </nav>
+
+
+  <!-- Header -->
+  <header> 
+    <div class="header-content">
+      <h2>Explore The Colourful World</h2>
+      <div class="line"></div>
+      <h1>A Wonderful Gift</h1>
+      <a href="#" target="_blank" class="button">Learn More</a>
+    </div>
+  </header>
+
+  <!-- Events Section -->
+  <section class="e vents">
+    
+    <div class="title">
+      <h1>Upcoming Events</h1>
+      <div class="line"></div>
+    </div>
+
+    <div class="row">
+
+      <div class="col1">
+        <img src="./camptrek-1.jpg" alt="Image-1">
+        <h4>Camp Trek-1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut pariatur libero dolore tempore quisquam veritatis?</p>
+        <br>
+        <a href="#" class="button">Learn More</a>
+      </div>
+
+      <div class="col2">
+        <img src="./camptrek-2.jpg" alt="Image-2">
+        <h4>Camp Trek-2</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut pariatur libero dolore tempore quisquam veritatis?</p>
+        <br>
+        <a href="#" class="button">Learn More</a>
+      </div>
+
+    </div>
+  </section>
+     
+  <!-- Explore Section -->
+  <section class="explore">
+    <div class="explore-content">
+      <h1>Explore the World</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat corporis reiciendis harum tempore quia blanditiis nihil, dolorum officiis, ipsa, qui tenetur aliquam! Delectus, magni! Quisquam cum culpa magni nihil consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam enim, sint eos repudiandae dolorem blanditiis numquam labore ipsum magnam, est ducimus corrupti asperiores non nostrum tempora quae laudantium sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, doloremque eius. Saepe, quis accusamus. Voluptate adipisci rem, porro voluptates labore mollitia omnis asperiores ut animi quo distinctio officiis impedit amet!</p>
+    
+      <a href="#" class="button">Learn More</a>
+    </div>
+  </section> 
+
+  <!-- Upcoming Tours Section -->
+  <section class="tours">
+     <div class="row">
+
+        <div class="col-content">
+          <h1>Upcoming Tours & Destination</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, similique itaque. Molestiae id quod quis ea? Esse ducimus commodi quis beatae provident eos incidunt voluptate eligendi atque. Suscipit, ipsa voluptas?</p>
+          <a href="#" class="button">Learn More</a>
+        </div>
+        
+        <div class="col-image">
+          <div class="image-gallery">
+            <img src="./img-1.jpg" alt="img-1" class="img-1">
+            <img src="./img-2.png" alt="img-2" class="img-2">
+            <img src="./img-3.jpg" alt="img-3" class="img-3">
+            <img src="./img-4.jpg" alt="img-4" class="img-4" >
+          </div>
+        </div>
+
+     </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="footer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quidem.</p>
+    <p>Copyright &copy; 2023 Adventure</p>
+  </section>
+
+  <!-- For Menu Button for Mobile Screen -->
+  <script>
+     const menubtn = document.querySelector('.menu-button')
+     const navlinks = document.querySelector('.navlinks')
+
+    //  adding event-listner
+    menubtn.addEventListener('click',()=>{
+      navlinks.classList.toggle('mobile-menu');
+    });
+  </script>
+
+</body>
+
+</html>
